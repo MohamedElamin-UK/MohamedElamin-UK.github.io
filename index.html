@@ -1,161 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Project: Recipe Book</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Workshop Invitation</title>
     <style>
-        
-        body {background-color: rgb(243, 242, 245);
-           
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
         }
-
-        h1, h2 {color:red;
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #3f51b5;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
+        h1, h2, h3 {
+            color: #3f51b5;
+        }
+        .banner {
+            text-align: center;
+        }
+        .banner img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .details {
+            margin: 20px 0;
+        }
+        .details div {
+            margin-bottom: 10px;
+        }
+        .agenda, .guest-list {
+            float: left;
+            width: 48%;
+            margin: 1%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .clearfix {
+            clear: both;
+        }
+        a {
+            color: #ffffff;
+            background-color: #3f51b5;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #303f9f;
+        }
     </style>
 </head>
 <body>
-    <h1>Chief Mohamed's Recipe Book</h1>
-    <h2>Instructions</h2>
-    
-    <h2>Contents:</h2>
-    <ol>
-        <li><a href="#recipe1">Garlic Butter Pasta</a></li>
-        <li><a href="#recipe2">Creamy Mushroom Risotto</a></li>
-        <li><a href="#recipe3">Classic Margherita Pizza</a></li>
-    </ol>
-    
-    <!-- Recipe 1 -->
-    <h2 id="recipe1">Garlic Butter Pasta</h2>
-    <ul>
-        <li>Time: 25 minutes</li>
-        <li>Serves: 4</li>
-    </ul>
-    
-    <table>
-        <thead>
-            <tr>
-                <th>Ingredients</th>
-                <th>Quantity</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Pasta</td>
-                <td>250g</td>
-            </tr>
-            <tr>
-                <td>Garlic cloves</td>
-                <td>3Pcs</td>
-            </tr>
-            <tr>
-                <td>Butter</td>
-                <td>50g</td>
-            </tr>
-            <tr>
-                <td>Parsley</td>
-                <td>2 tbsp</td>
-            </tr>
-            <tr>
-                <td>Salt</td>
-                <td>To taste</td>
-            </tr>
-        </tbody>
-    </table>
-    
-    <p><strong>Step 1:</strong> Cook the pasta according to package instructions. Drain and set aside.</p>
-    <p><strong>Step 2:</strong> Melt butter in a pan over medium heat. Add minced garlic and sauté until fragrant.</p>
-    <p><strong>Step 3:</strong> Add the cooked pasta to the pan. Toss to coat with butter and garlic.</p>
-    <p><strong>Step 4:</strong> Garnish with chopped parsley and season with salt. Serve warm.</p>
-    <p><em>Source: <a href="https://example.com/garlic-butter-pasta">Example Recipe Website</a></em></p>
-    
-    <!-- Recipe 2 -->
-    <h2 id="recipe2">Creamy Mushroom Risotto</h2>
-    <ul>
-        <li>Time: 40 minutes</li>
-        <li>Serves: 4</li>
-    </ul>
-    
-    <table>
-        <thead>
-            <tr>
-                <th>Ingredients</th>
-                <th>Quantity</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Arborio rice</td>
-                <td>1 cup</td>
-            </tr>
-            <tr>
-                <td>Mushrooms</td>
-                <td>200g</td>
-            </tr>
-            <tr>
-                <td>Chicken or vegetable stock</td>
-                <td>4 cups</td>
-            </tr>
-            <tr>
-                <td>Parmesan cheese</td>
-                <td>1/2 cup</td>
-            </tr>
-            <tr>
-                <td>Butter</td>
-                <td>2 tbsp</td>
-            </tr>
-        </tbody>
-    </table>
-    
-    <p><strong>Step 1:</strong> Sauté sliced mushrooms in butter until tender and set aside.</p>
-    <p><strong>Step 2:</strong> In a pot, heat stock and keep it warm.</p>
-    <p><strong>Step 3:</strong> In another pan, sauté Arborio rice in butter for 2-3 minutes. Gradually add stock, one ladle at a time, stirring continuously until absorbed.</p>
-    <p><strong>Step 4:</strong> Mix in the cooked mushrooms and Parmesan cheese. Serve hot.</p>
-    <p><em>Source: <a href="https://example.com/mushroom-risotto">Example Recipe Website</a></em></p>
-    
-    <!-- Recipe 3 -->
-    <h2 id="recipe3">Classic Margherita Pizza</h2>
-    <ul>
-        <li>Time: 30 minutes (prep) + 15 minutes (bake)</li>
-        <li>Serves: 2</li>
-    </ul>
-    
-    <table>
-        <thead>
-            <tr>
-                <th>Ingredients</th>
-                <th>Quantity</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Pizza dough</td>
-                <td>1 (12-inch crust)</td>
-            </tr>
-            <tr>
-                <td>Tomato sauce</td>
-                <td>1/2 cup</td>
-            </tr>
-            <tr>
-                <td>Fresh mozzarella</td>
-                <td>200g</td>
-            </tr>
-            <tr>
-                <td>Fresh basil leaves</td>
-                <td>Handful</td>
-            </tr>
-            <tr>
-                <td>Olive oil</td>
-                <td>2 tbsp</td>
-            </tr>
-        </tbody>
-    </table>
-    
-    <p><strong>Step 1:</strong> Preheat the oven to 220°C (430°F). Roll out the pizza dough on a baking tray.</p>
-    <p><strong>Step 2:</strong> Spread tomato sauce evenly over the crust.</p>
-    <p><strong>Step 3:</strong> Add slices of fresh mozzarella and bake for 10-15 minutes, or until the crust is golden and the cheese is bubbling.</p>
-    <p><strong>Step 4:</strong> Garnish with fresh basil leaves and drizzle with olive oil before serving.</p>
-    <p><em>Source: <a href="https://example.com/margherita-pizza">Example Recipe Website</a></em></p>
+    <div class="container">
+        <div class="banner">
+            <img src="workshop_banner.jpg" alt="Coding Workshop Banner">
+            <h1>CodeCraft: Unleashing Creativity Through Code</h1>
+        </div>
+        <div class="details">
+            <h2>Event Details</h2>
+            <div><strong>Date:</strong> Friday, 25th April 2025</div>
+            <div><strong>Time:</strong> 10:00 AM - 4:00 PM GMT</div>
+            <div><strong>Location:</strong> TechLab Innovation Center, Glasgow, Scotland</div>
+            <div><strong>Hosted by:</strong> Mohamed</div>
+        </div>
+        <div class="agenda">
+            <h3>Agenda Highlights</h3>
+            <ul>
+                <li>Introduction to Cutting-edge Technologies</li>
+                <li>Live Coding Sessions</li>
+                <li>Collaborative Problem Solving</li>
+                <li>Networking Opportunities</li>
+                <li>Panel Discussions with Industry Experts</li>
+            </ul>
+        </div>
+        <div class="guest-list">
+            <h3>Guest List</h3>
+            <ul>
+                <li>Individual developers and programmers</li>
+                <li>Technical entities</li>
+                <li>Organizations passionate about technology</li>
+                <li>Universities and colleges</li>
+                <li>Tech innovation groups</li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+        <div>
+            <a href="mailto:workshop@example.com">RSVP Now</a>
+        </div>
+    </div>
 </body>
 </html>
- 
